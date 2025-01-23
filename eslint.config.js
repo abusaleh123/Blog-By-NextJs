@@ -13,4 +13,7 @@ const eslintConfig = [...compat.extends("next/core-web-vitals")];
 module.exports = {
   parser: '@typescript-eslint/parser', // Use a valid parser name
 };
+module.exports = {
+  reactStrictMode: true,
+};
 export default eslintConfig;
