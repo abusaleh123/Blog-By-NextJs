@@ -1,4 +1,5 @@
-import Blogs from '@/components/blogs';
+
+import Blogs from '@/components/page';
 import React from 'react';
 
 const Home = async () => {
@@ -7,8 +8,8 @@ const Home = async () => {
   const data = await res.json();
   // console.log(data);
   return (
-    <div>
-    Hi
+    <div className='py-16'>
+  
     <Blogs data={data} />
     </div>
   );
