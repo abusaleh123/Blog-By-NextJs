@@ -10,5 +10,7 @@ const compat = new FlatCompat({
 });
 
 const eslintConfig = [...compat.extends("next/core-web-vitals")];
-
+module.exports = {
+  parser: '@typescript-eslint/parser', // Use a valid parser name
+};
 export default eslintConfig;
