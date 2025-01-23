@@ -3,7 +3,7 @@ import Link from "next/link";
 import {RegisterLink, LoginLink} from "@kinde-oss/kinde-auth-nextjs/components";
 import {LogoutLink} from "@kinde-oss/kinde-auth-nextjs/components";
 import { getKindeServerSession } from "@kinde-oss/kinde-auth-nextjs/server";
-
+import logo from '@/Images/n.png'
 
 
 const Navbar = async () => {
@@ -14,8 +14,8 @@ const user = await getUser();
       <div className="w-11/12 mx-auto flex justify-between items-center py-10 ">
         {/* Logo */}
         <div className="flex items-center justify-center">
-          <Link className="flex items-center justify-center" href={'/'}><Image src="/n.png" alt="Logo" width={50} height={50} />
-          <span className="ml-2 text-3xl font-bold">Nextify</span></Link>
+          <Link className="flex items-center justify-center" href={'/'}><Image src={logo} alt="Logo" width={40} height={40} />
+          <span className="ml-2 text-xl font-bold">Nextify</span></Link>
         </div>
 
         {/* Navigation Links */}

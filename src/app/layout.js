@@ -3,6 +3,7 @@ import "./globals.css";
 import Navbar from "./Navbar";
 
 
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -23,7 +24,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" >
       <head>
-      <link rel="icon"  href="/n.png" />
+      <link rel="icon"  href='/no.png' />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
