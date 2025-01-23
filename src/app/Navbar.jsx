@@ -9,12 +9,12 @@ const Navbar = async () => {
 const {getUser} = getKindeServerSession();
 const user = await getUser();
   return (
-    <nav className="bg-gray-800 text-white">
-      <div className="w-11/12 mx-auto flex justify-between items-center py-4 ">
+    <nav className=" text-white" >
+      <div className="w-11/12 mx-auto flex justify-between items-center py-10 ">
         {/* Logo */}
         <div className="flex items-center justify-center">
-          <Image src="/lo.png" alt="Logo" width={50} height={50} />
-          <span className="ml-2 text-3xl font-bold">MyApp</span>
+          <Image src="/n.png" alt="Logo" width={50} height={50} />
+          <span className="ml-2 text-3xl font-bold">Nextify</span>
         </div>
 
         {/* Navigation Links */}
@@ -27,7 +27,7 @@ const user = await getUser();
              Profile
             </Link>
           {
-            user ? <LogoutLink className="btn bg-blue-500 border-none hover:bg-blue-500 text-lg text-white " > Log out</LogoutLink> :   <LoginLink className="btn bg-blue-500 border-none hover:bg-blue-500 text-lg text-white " >Sign in</LoginLink>
+            user ? <LogoutLink className="btn bg-green-500 rounded-lg border-none hover:bg-blue-500 text-lg text-white " > Log out</LogoutLink> :   <LoginLink className="btn bg-blue-500 border-none hover:bg-green-500 text-lg text-white " >Sign in</LoginLink>
           }
             
           
