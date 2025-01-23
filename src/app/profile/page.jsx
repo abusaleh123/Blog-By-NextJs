@@ -1,25 +1,20 @@
 
 
-import {getKindeServerSession} from "@kinde-oss/kinde-auth-nextjs/server";
+
 
 const Profile = async () => {
-  const {isAuthenticated} = getKindeServerSession();
-  const isUserAuthenticated = await isAuthenticated();
+
 
   
   return (
     <div>
-      {
-      isUserAuthenticated ? (<>
+      
         <div className="flex items-center justify-center mt-80 ">
       <h1 className="text-3xl font-bold text-green-400">
         Welcome to your profile!
       </h1>
     </div>
-        </>) : (<>
-          
-          </>)
-    }
+       
     </div>
   );
 };
